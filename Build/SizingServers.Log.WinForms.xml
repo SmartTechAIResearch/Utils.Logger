@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SizingServers.Log.WinForms</name>
+    </assembly>
+    <members>
+        <member name="T:SizingServers.Log.WinForms.FileLoggerPanel">
+            <summary>
+            A winforms panel for displaying file log entries. You can also set the desired log level.
+            </summary>
+        </member>
+        <member name="P:SizingServers.Log.WinForms.FileLoggerPanel.SelectedLogEntries">
+            <summary>
+            Return JSON for the selected log entries.
+            </summary>
+        </member>
+        <member name="M:SizingServers.Log.WinForms.FileLoggerPanel.#ctor">
+            <summary>
+            A winforms panel for displaying file log entries. You can also set the desired log level.
+            </summary>
+        </member>
+        <member name="M:SizingServers.Log.WinForms.FileLoggerPanel.SelectNewestLog">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:SizingServers.Log.WinForms.FileLoggerPanel.OnResize(System.EventArgs)">
+            <summary>
+            Refresh the child controls, because they are not drawn well (flat-style) when resized.
+            </summary>
+            <param name="eventargs"></param>
+        </member>
+        <member name="T:SizingServers.Log.WinForms.FileLoggerPanel.LogFileComparer">
+            <summary>
+            Z-A comparer
+            </summary>
+        </member>
+        <member name="M:SizingServers.Log.WinForms.FileLoggerPanel.LogFileComparer.GetInstance">
+            <summary>
+            Z-A comparer
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:SizingServers.Log.WinForms.FileLoggerPanel.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SizingServers.Log.WinForms.FileLoggerPanel.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SizingServers.Log.WinForms.FileLoggerPanel.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>
