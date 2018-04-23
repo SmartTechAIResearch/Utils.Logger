@@ -24,7 +24,7 @@ namespace SizingServers.Log {
     /// <para></para>
     /// <para>Last but not least, read this: http://www.codeproject.com/Articles/9538/Exception-Handling-Best-Practices-in-NET. </para>
     /// <para></para>
-    /// <para>You can choose which loggers you want to use when logging (default only FileLogger), using the SetUseLogger function.</para>
+    /// <para>You can choose which loggers you want to use when logging (default only FileLogger and SimpleLogger), using the SetUseLogger function.</para>
     /// <para>For all 'used' loggers the Log function is called when calling a Log function here. (in parallel)</para>
     /// <para>You can if you like use a logger directly to write, but via here is the preferred method.</para>
     /// <para></para>
@@ -59,6 +59,7 @@ namespace SizingServers.Log {
         static Loggers() {
             _availableLoggers.Add(FileLogger.GetInstance(), true);
             _availableLoggers.Add(MailLogger.GetInstance(), false);
+            _availableLoggers.Add(SimpleLogger.GetInstance(), true);
         }
         #endregion
 
